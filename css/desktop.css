@@ -19,12 +19,12 @@
     padding-top: 188px;
     padding-bottom: 188px;
   }
-.header-section {
-  display: block;
-}
+
+  .header-section {
+    display: block;
+  }
   .header-section {
     padding-bottom: 24px;
-
   }
   .hero-title {
     font-weight: 700;
@@ -65,9 +65,9 @@
   .foto {
     padding-bottom: 120px;
   }
-.foto {
-  display: block;
-}
+  .foto {
+    display: block;
+  }
   .foto-list {
     display: flex;
     gap: 20px;
@@ -103,8 +103,8 @@
   .footer > .container {
     display: flex;
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    margin-right: 45px;
     margin: 0 auto;
   }
   .footer {
@@ -115,9 +115,6 @@
   .logo.footer {
     padding: 0;
     padding-bottom: 16px;
-  }
-  .footer-text {
-    margin-right: 120px;
   }
 
   .soc-media-title {
@@ -202,7 +199,7 @@
 
   .test {
     display: flex;
-    gap: 24px;
+    gap: 16px;
   }
 
   .subcribe-footer-btn {
@@ -300,7 +297,7 @@
   .team-members > .container {
     width: 1158px;
   }
-  
+
   .team-members-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -403,13 +400,17 @@
     display: block;
     text-align: initial;
   }
+  .footer-tablet {
+    display: flex;
+    gap: 102px;
+  }
 
-/* ---------------CUSTOMERS----------------- */
-.customers > .container {
-  width: 1158px;
-}
+  /* ---------------CUSTOMERS----------------- */
+  .customers > .container {
+    width: 1158px;
+  }
   .customers-item {
     width: 168px;
     height: 88px;
-}
+  }
 }

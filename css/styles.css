@@ -489,8 +489,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 132px;
-  padding-bottom: 240px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  margin: 0 auto;
 }
 
 .hero > .container {
