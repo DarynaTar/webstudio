@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header-section">
@@ -29,7 +32,9 @@
           >
           <ul class="header-nav list">
             <li>
-              <a href="./index.html" class="header-nav-link link current">Studio</a>
+              <a href="./index.html" class="header-nav-link link current"
+                >Studio</a
+              >
             </li>
             <li>
               <a href="./portfolio.html" class="header-nav-link link"
@@ -57,42 +62,101 @@
           </ul>
         </address>
       </div>
+      <div class="burger">
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" class="menu-close" data-menu-close>
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="contacts-menu list">
+              <li class="contacts-menu-item">
+                <a href="tel:+110001111111" class="contacts-menu-link tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-menu-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-menu-link mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-mob-list list">
+              <li class="soc-mob-item">
+                <a href="" class="soc-mob-link link">
+                  <svg class="soc-mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mob-item">
+                <a href="" class="soc-mob-link link">
+                  <svg class="soc-mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mob-item">
+                <a href="" class="soc-mob-link link">
+                  <svg class="soc-mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mob-item">
+                <a href="" class="soc-mob-link link">
+                  <svg class="soc-mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="activity">
         <div class="container">
           <h2 class="visually-hidden">What are we doing</h2>
-          <!-- <ul class="activity-icon-list list">
-            <li class="activity-icon-item">
-              <a href="" class="activity-icon-link link">
-                <svg class="activity-icon" width="60" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="activity-icon-item">
-              <a href="" class="activity-icon-link link">
-                <svg class="activity-icon" width="60" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use></svg></a>
-            </li>
-            <li class="activity-icon-item">
-              <a href="" class="activity-icon-link link">
-                <svg class="activity-icon" width="60" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use></svg></a>
-            </li>
-            <li class="activity-icon-item">
-              <a href="" class="activity-icon-link link">
-                <svg class="activity-icon" width="60" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use></svg></a>
-            </li>
-          </ul> -->
-          <ul class="activity-list list">
+                    <ul class="activity-list list">
             <li class="activity-item">
               <div class="activity-icon">
                 <svg class="icon-image" width="60" height="64">
@@ -382,7 +446,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class footer-right>
+        <div class="footer-right">
         <a href="./index.html" class="logo link footer"
           >WEB<span class="logo-white">STUDIO</span></a
         >
@@ -448,46 +512,71 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-        <div class="modal-field">
-          <label class="label">Name
-            <div class="input-wrap">
-            <input class="modal-input" type="text" name="name" placeholder="" required/>
-            <svg class="input-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-user"></use>
-            </svg>
+          <div class="modal-field">
+            <label class="label"
+              >Name
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="name"
+                  placeholder=""
+                  required
+                />
+                <svg class="input-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </label>
           </div>
-          </label>
-        </div>
-        <div class="modal-field">
-          <label class="label">Phone
-            <div class="input-wrap">
-            <input class="modal-input" type="tel" name="tel" placeholder="" required/>
-            
-              <svg class="input-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
-        <div class="modal-field">
-          <label class="label">
-            Email
-            <div class="input-wrap">
-            <input class="modal-input" type="email" name="email" placeholder=""/>
-            <svg class="input-icon" width="15" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="modal-field">
+            <label class="label"
+              >Phone
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="tel"
+                  placeholder=""
+                  required
+                />
+
+                <svg class="input-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </div>
+            </label>
           </div>
-          </label>
-        </div>
-        <div class="modal-field">
-          <label class="input-text">Comment
-            <div class="input-wrap">
-            <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Text input"></textarea>
-            </div>
-          </label>
-        </div>
-        <!-- <div class="check-wrap">
+          <div class="modal-field">
+            <label class="label">
+              Email
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="email"
+                  placeholder=""
+                />
+                <svg class="input-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="input-text"
+              >Comment
+              <div class="input-wrap">
+                <textarea
+                  name="user-text"
+                  id="user-text"
+                  class="modal-comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </label>
+          </div>
+          <!-- <div class="check-wrap">
         <label class="label-check">
           <span class="icon-span">
             <svg class="check-icon" width="10" height="8">
@@ -498,20 +587,29 @@
           </span>
         </label>
       </div> -->
-      <div class="modal-field">
-        <input type="checkbox" name="privacy" id="privacy" id="true" class="input-check visually-hidden">
-<label for="privacy" class="check-text">
-  <span>
-    <svg class="check-icon" width="10" height="8">
-      <use href="./images/icons.svg#icon-check"></use>
-    </svg>
-  </span>
-  I accept the terms and conditions of the <a href="" class="link-privacy">Privacy Policy</a></label>
-      </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              id="true"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="link-privacy">Privacy Policy</a></label
+            >
+          </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
-      </div>  
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

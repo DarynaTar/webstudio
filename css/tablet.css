@@ -1,0 +1,156 @@
+@viewport {
+  width: device-width;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  container {
+    width: 738px;
+  }
+
+  .burger,
+  .mob-menu {
+    display: none;
+  }
+
+  .header-nav {
+    display: initial;
+  }
+
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 123px;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-section > .container {
+    display: flex;
+    width: 100%;
+  }
+  .contacts-nav {
+    display: block;
+    margin-right: auto;
+    margin-left: 120px;
+  }
+  .header-nav-link.link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+    position: relative;
+    transition-property: color;
+    transition-duration: var(--dur);
+    transition-timing-function: var(--timing);
+  }
+
+  .contacts-nav-link.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--first-text-color);
+  }
+  .header-nav-link:hover,
+  .header-nav-link:focus,
+  .contacts-nav-link:hover,
+  .contacts-nav-link:focus {
+    color: var(--btn-hover-fon);
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 494px;
+    line-height: 60px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tablet.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px;
+      margin: 0 auto;
+      padding-top: 111px;
+    padding-bottom: 108px;
+  }
+
+.hero-title {
+  margin-bottom: 40px;
+}
+  .activity-icon {
+    display: none;
+  }
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+  .activity-item-title {
+    text-align: initial;
+  }
+
+  .activity-list li {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
+  }
+  .modal {
+    width: 408px;
+    min-height: 576px;
+  }
+  /* -------------------TEAM-SECTION---------------------- */
+.team-members > .container {
+  width: 738px;
+}
+  .team-members {
+     padding-bottom: 104px;
+
+
+
+}
+.team-members-list{
+  column-gap: 24px;
+  row-gap: 40px;
+}
+.team-members-item {
+  width: calc((100% - 24px) / 2);
+
+}
+
+.team-members > .container {
+  width: 738px;
+}
+
+
+/* .team-members-list {
+padding-bottom: 0;
+gap: 24px;
+row-gap: 64px;}
+.team-members-list > .team-members-item{
+  margin: 0;
+} */
+
+.team-members-item {
+  width: calc((100-24px) / 2);
+}
+.customers > .container {
+  min-width: 738px;
+  padding-left: 108px;
+  padding-right: 108px;
+}
+.customers-list {
+justify-content: center;
+}
+.customers-item {
+  width: calc((100% - 48px) / 3);
+}
+.footer > .container {
+  padding-left: 108px;
+  padding-right: 108px;
+}
+}
