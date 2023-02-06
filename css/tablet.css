@@ -106,6 +106,8 @@
   /* -------------------TEAM-SECTION---------------------- */
 .team-members > .container {
   width: 738px;
+  padding-right: 108px;
+  padding-left: 108px;
 }
   .team-members {
      padding-bottom: 104px;
