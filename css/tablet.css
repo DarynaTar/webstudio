@@ -58,6 +58,9 @@ margin: 0 auto;
     margin-right: auto;
     margin-left: 120px;
   }
+.contacts-nav-item {
+  margin-bottom: 4px;
+}
   .header-nav-link.link {
     font-size: 16px;
     line-height: 1.5;
@@ -100,13 +103,18 @@ margin: 0 auto;
     padding-top: 111px;
     padding-bottom: 108px;
   }
+  
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-    .hero{
-        background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet-2x.jpg);}
+  (min-resolution: 2dppx) {
+  .hero{
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tablet-2x.jpg);
+  }
+}
   .hero-title {
     margin-bottom: 40px;
   }
@@ -119,6 +127,10 @@ margin: 0 auto;
     column-gap: 24px;
     row-gap: 72px;
   }
+
+  .team-members-title {
+    font-size: 36px;
+}
   .activity-item-title {
     text-align: initial;
   }
@@ -223,5 +235,5 @@ row-gap: 64px;}
 }
 .customers-item {
   width: 168px;
-
   }
+}

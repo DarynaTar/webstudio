@@ -32,7 +32,7 @@ margin: 0 auto;
 
   .soc-mob-list {
     gap: 56px;}
-    
+
   .mob-menu-link,
   .tel {
     font-size: 36px;
@@ -45,13 +45,19 @@ margin: 0 auto;
           ),
           url(../images/Dark-bg-tablet.jpg);
 }
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .hero{
-        background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-2x.jpg);}
+  .hero{
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-mob-2x.jpg);
+  }
+}
+
 .hero-title {
     font-size: 36px;
     line-height: 1.11;  
@@ -79,5 +85,14 @@ margin: 0 auto;
 
 .team-members > .container {
     margin: 0 auto;
+}
+.team-members {
+    padding-bottom: 128px;
+}
+.team-members-title {
+    font-size: 36px;
+}
+.customers-item {
+    width: 190px;
 }
 }
