@@ -25,6 +25,14 @@ margin: 0 auto;
 .header-section > .container {
     width: 428px;
   }
+
+  .contacts-menu-link.mail {
+    font-size: 20px;
+  }
+
+  .soc-mob-list {
+    gap: 56px;}
+    
   .mob-menu-link,
   .tel {
     font-size: 36px;

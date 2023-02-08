@@ -168,8 +168,7 @@ body {
 
 .soc-mob-list {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
 }
 .soc-mob-item {
   width: 40px;
@@ -317,9 +316,10 @@ body {
 
 .logo.footer {
   padding: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   justify-content: center;
 }
+
 .footer-text {
   padding-left: 80px;
   padding-right: 80px;
@@ -356,16 +356,19 @@ body {
 /* .footer > .container {
   display: flex;
 } */
-
+.social-media {
+  margin-top: 72px;
+}
+.footer-tablet {
+  margin-bottom: 72px;
+}
 .cos-media-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .soc-media-title {
-  margin-top: 72px;
   text-align: center;
 }
 

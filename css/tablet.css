@@ -47,10 +47,11 @@ margin: 0 auto;
     display: flex;
     gap: 40px;
   }
-
+.activity > .container {
+  width: 768px;
+}
   .header-section > .container {
     display: flex;
-    width: 100%;
   }
   .contacts-nav {
     display: block;
@@ -101,7 +102,7 @@ margin: 0 auto;
   }
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  (min-resolution: 2dppx) 
     .hero{
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -115,7 +116,8 @@ margin: 0 auto;
   .activity-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .activity-item-title {
     text-align: initial;
@@ -141,7 +143,7 @@ margin: 0 auto;
   }
   .team-members-list {
     column-gap: 24px;
-    row-gap: 40px;
+    row-gap: 64px;
   }
   .team-members-item {
     width: calc((100% - 24px) / 2);
@@ -216,3 +218,10 @@ row-gap: 64px;}
     .footer-input {
       width: 264px;
 }
+.social-media {
+  margin-top: 0;
+}
+.customers-item {
+  width: 168px;
+
+  }

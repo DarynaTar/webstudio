@@ -137,7 +137,8 @@
   }
 
   .social-media {
-    margin-right: 80px;
+
+    margin-top: 0;
   }
 
   .soc-media-item {
@@ -403,6 +404,8 @@
   .footer-tablet {
     display: flex;
     gap: 102px;
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 
   /* ---------------CUSTOMERS----------------- */
@@ -412,5 +415,11 @@
   .customers-item {
     width: 168px;
     height: 88px;
+  }
+  .activity-item-title {
+    text-align: initial;
+  }
+  .customers-list {
+    gap:24px;
   }
 }
